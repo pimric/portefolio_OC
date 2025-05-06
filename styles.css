@@ -1,0 +1,273 @@
+/* styles.css – Portfolio Consultant Data */
+
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* HEADER + NAVIGATION */
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-left: 0;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #3b82f6;
+  width: 0;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+nav a:hover {
+  color: #f1f5f9;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* MAIN – Empile les sections verticalement */
+main {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+/* SECTIONS */
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* EMBED TABLEAU / IMAGE */
+.embed-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.embed-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* PDF BUTTONS */
+.pdf-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.button-link:hover {
+  background: #2563eb;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  background-color: #f1f5f9;
+  margin-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* ANIMATIONS SCROLL */
+.fade-init {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-init.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#projectContent {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+#projectContent h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#projectContent h4 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #0f172a;
+}
+
+#projectContent ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+#projectContent a.button-link {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.encart {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  transform: translateY(0);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.encart:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.encart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  text-align: center;
+}
+
+.encart p,
+.encart a.button {
+  text-align: center;
+}
+
+.encart a.button {
+  margin-top: auto;
+  display: inline-block;
+  background: #3b82f6;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.encart a.button:hover {
+  background: #2563eb;
+}
+
+/* Mise en page spécifique à la page d'accueil */
+main.accueil {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+main.accueil .encart {
+  flex: 1 1 300px;
+  max-width: 340px;
+}
+

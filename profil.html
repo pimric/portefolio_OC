@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil – Richard Dufaur</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 180px);
+      padding: 1rem;
+    }
+
+    .tableauWrapper {
+      width: 98vw;
+      height: 780px;
+      margin: 0 auto;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .tableauPlaceholder {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .tableauWrapper {
+        width: 100vw;
+        height: 90vh;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio – Richard Dufaur</h1>
+        <nav>
+          <ul>
+            <li><a href="aeroworld.html">Aéroworld</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="openclassrooms.html">Projets OC</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+  <main>
+    <div class="tableauWrapper">
+      <div class='tableauPlaceholder' id='viz1746434764917'>
+        <noscript>
+          <a href='#'>
+            <img alt='CV_page1' src='https://public.tableau.com/static/images/Pr/Profil_17463646444570/CV_page1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Profil_17463646444570/CV_page1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Pr/Profil_17463646444570/CV_page1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='fr-FR' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Richard Dufaur – Tous droits réservés</p>
+  </footer>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1746434764917');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '100%';
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets OpenClassrooms – Richard Dufaur</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Portfolio – Richard Dufaur</h1>
+        <nav>
+          <ul>
+            <li><a href="aeroworld.html">Aéroworld</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="openclassrooms.html">Projets OC</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+  <main>
+
+    <section class="section">
+        <h2>Mes projets OpenClassrooms</h2>
+      
+        <!-- Menu déroulant -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <label for="projectSelect" style="font-weight: bold;">Sélectionnez un projet :</label>
+          <select id="projectSelect" style="margin-left: 1rem; padding: 0.5rem 1rem; font-size: 1rem;">
+            <option value="1">Projet 1 : Prenez en main votre formation</option>
+            <option value="2">Projet 2 : Faites une analyse de ventes</option>
+            <option value="3">Projet 3 : Requêtez une base de données</option>
+            <option value="4">Projet 4 : Réalisez une étude de santé publique</option>
+            <option value="5">Projet 5 : Base immobilière SQL</option>
+            <option value="6">Projet 6 : Gestion boutique</option>
+            <option value="7">Projet 7 : Tableau Power BI</option>
+            <option value="8">Projet 8 : Indicateurs égalité RGPD</option>
+            <option value="9">Projet 9 : Corrélation et séries</option>
+            <option value="10">Projet 10 : Dashboard Spotify</option>
+            <option value="11">Projet 11 : Étude de marché</option>
+            <option value="12">Projet 12 : Détection de faux billets</option>
+
+
+
+            <!-- Projets 2 à 12 seront ajoutés ici plus tard -->
+          </select>
+        </div>
+      
+        <!-- Contenu du projet -->
+        <div id="projectContent">
+          <h3>Projet 1 : Prenez en main votre formation de Data Analyst</h3>
+      
+          <h4>Compétences techniques</h4>
+          <ul>
+            <li>Connaissances autodidactes en informatique</li>
+            <li>Niveau débutant en R / Python / SQL</li>
+            <li>Axes d’amélioration : la rigueur</li>
+          </ul>
+      
+          <h4>Soft skills</h4>
+          <ul>
+            <li>Rigueur</li>
+            <li>Pédagogie</li>
+            <li>Adaptation</li>
+            <li>Priorisation</li>
+            <li>Force de proposition</li>
+          </ul>
+      
+          <h4>Livrables</h4>
+          <a href="https://kdrive.infomaniak.com/app/share/1273994/e811a1e9-9a26-48f0-a254-372906839f98" target="_blank" class="button-link">
+            Voir les livrables du projet 1
+          </a>
+        </div>
+      </section>
+
+
+
+
+
+
+      <script>
+        const projects = {
+          1: {
+            title: "Projet 1 : Prenez en main votre formation de Data Analyst",
+            competences: [
+              "Connaissances autodidactes en informatique",
+              "Niveau débutant en R / Python / SQL",
+              "Axes d’amélioration : la rigueur"
+            ],
+            softskills: [
+              "Rigueur",
+              "Pédagogie",
+              "Adaptation",
+              "Priorisation",
+              "Force de proposition"
+            ],
+            link: "https://kdrive.infomaniak.com/app/share/1273994/e811a1e9-9a26-48f0-a254-372906839f98"
+          },
+          2: {
+            title: "Projet 2 : Faites une analyse de ventes pour un e-commerce",
+            competences: [
+              "Analyse de données visuelles (graphiques)",
+              "Interprétation de tendances commerciales",
+              "Identification de corrélations entre indicateurs"
+            ],
+            softskills: [
+              "Capacité d’analyse",
+              "Synthèse"
+            ],
+            link: "https://kdrive.infomaniak.com/app/share/1273994/e81d3b0b-2c7b-442e-9c7b-837ad254cb69"
+          },
+
+          3: {
+  title: "Projet 3 : Requêtez une base de données avec SQL",
+  competences: [
+    "Analyse de structure de données (dictionnaire, types, contraintes)",
+    "Création de schéma relationnel normalisé",
+    "Mise en place d’une base de données SQL fonctionnelle",
+    "Rédaction et exécution de requêtes SQL complexes",
+    "Utilisation des fonctions SQL (AVG, COUNT, DISTINCT, LEFT)"
+  ],
+  softskills: [
+    "Capacité d’analyse – Compréhension des relations entre tables",
+    "Rigueur – Documentation détaillée du dictionnaire de données et contraintes"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/a7224962-5ce7-47ab-81e4-a24054e95624"
+},
+
+4: {
+  title: "Projet 4 : Réalisez une étude de santé publique avec R ou Python",
+  competences: [
+    "R Markdown pour la documentation reproductible",
+    "Fonctions avancées de manipulation de données (mutate, summarise, group_by, etc.)",
+    "Structure conditionnelle et boucles (for)",
+    "Langage R"
+  ],
+  softskills: [
+    "Organisation et structuration d’un projet d’analyse",
+    "Prise de recul sur des problématiques mondiales (sous-nutrition, aide alimentaire)"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/7f1c6ceb-4980-43a1-82ef-e0a622c96262"
+},
+5: {
+  title: "Projet 5 : Créez et utilisez une base de données immobilière avec SQL",
+  competences: [
+    "Langage SQL",
+    "Système de gestion de base de données MySQL",
+    "Conception et création de bases de données relationnelles",
+    "Modélisation de données et normalisation (schéma relationnel)",
+    "Maîtrise du langage SQL (requêtes complexes)",
+    "Jointures entre tables multiples (INNER JOIN)",
+    "Compétences en analyse métier"
+  ],
+  softskills: [
+    "Capacité à traduire des questions métier en requêtes techniques",
+    "Résolution de problèmes complexes"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/3b486b64-70df-4cd8-ad87-5d4e842c0949"
+},
+6: {
+  title: "Projet 6 : Optimisez la gestion des données d'une boutique avec R ou Python",
+  competences: [
+    "Compréhension des indicateurs commerciaux (CA, marge, rotation des stocks)",
+    "Identification des opportunités d’optimisation commerciale",
+    "Méthodes d’imputation de données manquantes",
+    "Analyses statistiques descriptives"
+  ],
+  softskills: [
+    "Capacité à identifier et résoudre des problèmes",
+    "Communication visuelle des résultats",
+    "Autonomie dans la conduite d’un projet d’analyse"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/609c1cee-9bf5-4621-9956-2f7ad681bfcf"
+},
+7: {
+  title: "Projet 7 : Créez un tableau de bord dynamique avec Power BI",
+  competences: [
+    "Power BI Desktop",
+    "Power Query Editor",
+    "DAX (Data Analysis Expressions)",
+    "Analyses statistiques descriptives",
+    "Analyse de performance des projets (délais, coûts)"
+  ],
+  softskills: [
+    "Orientation utilisateur dans la conception d’interfaces",
+    "Capacité à comprendre les enjeux de gestion de projet",
+    "Conception d’outils d’aide à la décision"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/2b21805e-5146-4d73-a496-d92bc441c97e"
+},
+8: {
+  title: "Projet 8 : Analysez des indicateurs de l’égalité femmes/hommes en respect du RGPD",
+  competences: [
+    "Intégration de données RH provenant de plusieurs sources",
+    "Calcul d’indicateurs réglementaires complexes",
+    "Outils ETL pour la jointure et l’agrégation de données",
+    "Systèmes de manipulation de CSV",
+    "Connaissances des indicateurs RH et de parité"
+  ],
+  softskills: [
+    "Respect du RGPD et manipulation des données",
+    "Compréhension des enjeux éthiques",
+    "Rigueur méthodologique"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/f57007e1-72cc-4215-852c-977ace53bd12"
+},
+9: {
+  title: "Projet 9 : Analysez des indicateurs de l’égalité femmes/hommes en respect du RGPD",
+  competences: [
+    "Analyse de corrélation",
+    "Analyse de séries temporelles",
+    "Visualisation de données avancée : création de graphiques multidimensionnels (heat maps, corrélations)"
+  ],
+  softskills: [
+    "Analyse métier : compréhension des enjeux business d’une plateforme e-commerce",
+    "Pensée critique : identification de tendances préoccupantes et opportunités"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/681d76cd-7938-455f-8bdc-8ad1352824d5"
+},
+10: {
+  title: "Projet 10 : Réalisation d’un tableau de bord sur Spotify",
+  competences: [
+    "Segmentation et filtrage de données",
+    "Compréhension des propriétés spécifiques d’attributs techniques musicaux",
+    "Nettoyage et préparation de données"
+  ],
+  softskills: [
+    "Conception centrée utilisateur",
+    "Storytelling : création d’une narration sur l’évolution de la musique",
+    "Esprit de synthèse"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/221586fc-212c-4e55-be3b-519828d55f78"
+},
+11: {
+  title: "Projet 11 : Produisez une étude de marché avec R ou Python",
+  competences: [
+    "Analyse de données multidimensionnelles",
+    "Visualisation statistique avancée",
+    "Analyse en Composantes Principales (ACP)"
+  ],
+  softskills: [
+    "Intelligence commerciale",
+    "Esprit de synthèse",
+    "Adaptabilité"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/9482ddd3-dd6d-4ff2-a5be-8adb0774c929"
+},
+12: {
+  title: "Projet 12 : Détectez des faux billets avec R ou Python",
+  competences: [
+    "Machine Learning (régression logistique, K-means, KNN, Random Forest)",
+    "Évaluation de modèles (matrices de confusion, précision)",
+    "Développement d’applications (interface utilisateur)"
+  ],
+  softskills: [
+    "Résolution de problèmes réels",
+    "Rigueur méthodologique",
+    "Vulgarisation technique"
+  ],
+  link: "https://kdrive.infomaniak.com/app/share/1273994/1e03580c-1a71-41f1-8668-f72528c21248"
+},
+
+
+        };
+      
+        const select = document.getElementById("projectSelect");
+        const content = document.getElementById("projectContent");
+      
+        select.addEventListener("change", () => {
+          const project = projects[select.value];
+          content.innerHTML = `
+            <h3>${project.title}</h3>
+            <h4>Compétences techniques</h4>
+            <ul>${project.competences.map(item => `<li>${item}</li>`).join("")}</ul>
+            <h4>Soft skills</h4>
+            <ul>${project.softskills.map(item => `<li>${item}</li>`).join("")}</ul>
+            <h4>Livrables</h4>
+            <a href="${project.link}" target="_blank" class="button-link">Voir les livrables du projet ${select.value}</a>
+          `;
+        });
+      </script>
+      
+      

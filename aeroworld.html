@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Aéroworld – Richard Dufaur</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Portfolio – Richard Dufaur</h1>
+        <nav>
+          <ul>
+            <li><a href="aeroworld.html">Aéroworld</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="openclassrooms.html">Projets OC</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section class="section">
+            <h2>Gantt / Rétroplanning</h2>
+            <div class="embed-container">
+              <img
+                src="/Users/riclamalice/kDrive2/OPENCLASSROOM/Projet_13/portefolio/img/Retroplanning_Candidature.png"
+                alt="Diagramme de Gantt"
+                style="width: 100%; height: auto; border-radius: 12px; display: block;"
+              />
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Analyse du besoin & Cahier des charges</h2>
+            <div class="pdf-links">
+              <a href="https://kdrive.infomaniak.com/app/share/1273994/5e3b9ff8-1606-4b29-8cb1-4987a6ca8493" target="_blank" class="button-link">
+                Télécharger l'analyse du besoin
+              </a>
+              <a href="https://kdrive.infomaniak.com/app/share/1273994/e33092cf-8f0a-419f-9e03-6b386f5f9292" target="_blank" class="button-link">
+                Télécharger le cahier des charges
+              </a>
+            </div>
+          </section>
+          
+          <section class="section">
+            <h2>Tableau de bord de veille</h2>
+            <div class="embed-container">
+              <div class='tableauPlaceholder' id='vizVeille'>
+                <noscript>
+                  <a href='#'>
+                    <img alt='Tableau de bord de veille' src='https://public.tableau.com/static/images/C7/C7S6ZK4KT/1.png' style='border: none' />
+                  </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='path' value='shared/C7S6ZK4KT' />
+                  <param name='toolbar' value='yes' />
+                  <param name='language' value='fr-FR' />
+                </object>
+              </div>
+            </div>
+          </section>
+          
+        
+          <section class="section">
+            <h2>Vidéo</h2>
+            <p style="text-align: center; font-size: 1.125rem;">
+              Une vidéo de présentation du projet et un PDF récapitulatif seront ajoutés ici prochainement.
+            </p>
+          
+            <div style="position: relative; padding-bottom: 62.5%; height: 0; margin-top: 2rem;">
+              <iframe
+                src="https://www.loom.com/embed/bc90ec01eca8409f9b908bb0aee06a80?sid=33268ce6-5414-4ede-8d32-3fa27a60e5af"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              </iframe>
+            </div>
+          </section>
+          
+          
+
+
+
+          <script type='text/javascript'>
+            const veilleDiv = document.getElementById('vizVeille');
+            const veilleViz = veilleDiv.getElementsByTagName('object')[0];
+            veilleViz.style.width = '100%';
+            veilleViz.style.height = '600px';
+            const veilleScript = document.createElement('script');
+            veilleScript.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            veilleViz.parentNode.insertBefore(veilleScript, veilleViz);
+          </script>
+          
+
+
+
+
+        <script type='text/javascript'>
+            const ganttDiv = document.getElementById('vizGantt');
+            const ganttViz = ganttDiv.getElementsByTagName('object')[0];
+            ganttViz.style.width = '100%';
+            ganttViz.style.height = '800px';
+            const ganttScript = document.createElement('script');
+            ganttScript.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            ganttViz.parentNode.insertBefore(ganttScript, ganttViz);
+          </script>
+         </body>
